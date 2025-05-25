@@ -3,7 +3,7 @@
 This project demonstrates how to deploy a machine learning model using Streamlit to predict whether it will rain tomorrow in Australia, based on weather data.
 The app allows users to enter weather parameters and get a prediction and probability using a pre-trained ML model.
 
-You can test the application here: https://your-app-link.streamlit.app/
+You can test the application here: [https://your-app-link.streamlit.app/](https://allenphos-streamlit-weather-demo-app-p76ls2.streamlit.app/)
 If you see the message "This app has gone to sleep due to inactivity. Would you like to wake it back up?", simply click "Yes, get this app back up!" and wait about 30 seconds.
 
 ## Project Structure
