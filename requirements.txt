@@ -1,4 +1,8 @@
-streamlit==1.37.1
-pandas==2.2.2
-numpy==1.26.4
-joblib==1.4.2
+<<<<<<< HEAD
+joblib
+=======
+joblib
+streamlit
+pandas
+numpy
+>>>>>>> c266ac1713ed7c449e9ee6cd1ff56a9bd37f7c4f
