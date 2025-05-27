@@ -10,6 +10,12 @@ try:
 except Exception as e:
     st.error(str(e))
 
+import os
+
+st.write("Current working directory:", os.getcwd())
+st.write("Files in models folder:", os.listdir("models"))
+st.write("Files in images folder:", os.listdir("images"))
+
 # === Load trained model and preprocessors ===
 bundle = joblib.load("models/aussie_rain.joblib")
 
