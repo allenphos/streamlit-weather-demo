@@ -1,7 +1,14 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import joblib
+#import joblib
+import sys
+st.write(sys.path)
+try:
+    import joblib
+    st.write("Joblib imported OK")
+except Exception as e:
+    st.error(str(e))
 
 # === Load trained model and preprocessors ===
 bundle = joblib.load("models/aussie_rain.joblib")
