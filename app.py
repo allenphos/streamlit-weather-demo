@@ -17,7 +17,14 @@ st.write("Files in models folder:", os.listdir("models"))
 st.write("Files in images folder:", os.listdir("images"))
 
 # === Load trained model and preprocessors ===
-bundle = joblib.load("models/aussie_rain.joblib")
+import traceback
+try:
+    bundle = joblib.load("models/aussie_rain.joblib")
+except Exception as e:
+    import streamlit as st
+    st.error(f"Exception during model loading: {e}")
+    st.text(traceback.format_exc())
+    bundle = None
 
 st.title("☔️ Tomorrow's Rain Forecast (Australia)")
 
