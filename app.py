@@ -1,24 +1,9 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-#import joblib
-import sys
-st.write(sys.path)
-try:
-    import joblib
-    st.write("Joblib imported OK")
-except Exception as e:
-    st.error(str(e))
+import joblib
 
-# === Load trained model and preprocessors ===
-import traceback
-try:
-    bundle = joblib.load("models/aussie_rain.joblib")
-except Exception as e:
-    import streamlit as st
-    st.error(f"Exception during model loading: {e}")
-    st.text(traceback.format_exc())
-    bundle = None
+bundle = joblib.load("models/aussie_rain.joblib")
 
 st.title("☔️ Tomorrow's Rain Forecast (Australia)")
 
