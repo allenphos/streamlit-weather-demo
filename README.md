@@ -8,11 +8,11 @@ If you see the message "This app has gone to sleep due to inactivity. Would you 
 
 ## Project Structure
 
-- **data/**: Директорія, що містить набір даних Iris (`weatherAUS.csv`).
+- **data/**: Directory containing the dataset (`weatherAUS.csv`).
 - **images/**: Директорія для зберігання зображень, які використовуються в додатку.
-- **models/**: Директорія, що містить навчену ML-модель.
-- **app.py**: Основний файл застосунку Streamlit.
-- **requirements.txt**: Список необхідних Python-пакетів.
+- **models/**: Directory containing the trained ML model.
+- **app.py**: Main Streamlit application file.
+- **requirements.txt**: List of required Python packages.
 
 ## Setup
 
